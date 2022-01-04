@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/ash
 # Author: paolo.denti@gmail.com (Paolo Denti)
 
 STATUS=stopped

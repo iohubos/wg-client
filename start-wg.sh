@@ -1,6 +1,8 @@
 #!/bin/ash
 # Author: paolo.denti@gmail.com (Paolo Denti)
 
+mkdir -p /etc/wireguard
+
 STATUS=stopped
 if [[ -f /etc/wireguard/wg0.conf ]]; then
     wg-quick up /etc/wireguard/wg0.conf

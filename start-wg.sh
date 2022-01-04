@@ -1,6 +1,8 @@
 #!/bin/ash
 # Author: paolo.denti@gmail.com (Paolo Denti)
 
+echo "1" > /proc/sys/net/ipv4/ip_forward
+
 mkdir -p /etc/wireguard
 
 STATUS=stopped

@@ -10,6 +10,6 @@ The local folder mounted on `/work` is watched for updates on the file `wg0.conf
 ```bash
 docker run --rm -it --name wg-client \
     -v /tmp/wireguard:/work \
-    --cap-add=NET_ADMIN --cap-add=SYS_MODULE \
+    --privileged \
     iohubos/wg-client
 ```
